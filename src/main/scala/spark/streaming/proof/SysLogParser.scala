@@ -35,7 +35,7 @@ case class SysLogRecord(dateTime:String , client:String , messageID:String , mes
       if (matcher.find) {
         buildSysLogParser(matcher)
       } else {
-        SysLogRecord("BAD", "BAD", "BAD", "BAD")
+        SysLogRecord("", "", "", "")
       }
     }
 

@@ -24,7 +24,7 @@ object SysLogReceiver {
       System.exit(1)
     }
 
-    val sparkConf = new SparkConf().setAppName("NetworkWordCount")
+    val sparkConf = new SparkConf().setAppName("SysLogReceiver")
     val sc = new SparkContext(sparkConf)
     val ssc = new StreamingContext(sc, Seconds(1))
 
